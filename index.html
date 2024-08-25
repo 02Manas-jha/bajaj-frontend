@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFHL Frontend Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+        .response-container {
+            margin-top: 20px;
+        }
+        .error {
+            color: red;
+        }
+        .response-content {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>BFHL Frontend Application</h1>
+
+    <textarea id="jsonInput" placeholder="Enter JSON here..."></textarea>
+    <button id="submitBtn">Submit</button>
+
+    <div id="error" class="error"></div>
+
+    <div id="responseContainer" class="response-container" style="display: none;">
+        <h3>Response</h3>
+        <div>
+            <label>
+                <input type="checkbox" value="Alphabets" id="alphabetsCheckbox" />
+                Alphabets
+            </label>
+            <label>
+                <input type="checkbox" value="Numbers" id="numbersCheckbox" />
+                Numbers
+            </label>
+            <label>
+                <input type="checkbox" value="Highest Lowercase Alphabet" id="lowercaseCheckbox" />
+                Highest Lowercase Alphabet
+            </label>
+        </div>
+        <div id="responseContent" class="response-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
